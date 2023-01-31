@@ -1,0 +1,37 @@
+name: flutter_with_flavors
+version: 1.0.0+1
+publish_to: none
+description: Using Flutter flavors to separate the DEV and PROD environment
+homepage: https://github.com/LHHan/flutter_with_flavors
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+
+flutter_intl:
+  enabled: true
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.10.0
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path: "assets/store/icons/app_icon.png"
+  adaptive_icon_background: "assets/store/icons/adaptive_icon_background.png" # for Android 8.0+ devices
+  adaptive_icon_foreground: "assets/store/icons/adaptive_icon_foreground.png" # for Android 8.0+ devices
+# To Generate icon
+#  flutter pub get
+#  flutter pub run flutter_launcher_icons:main
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/store/icons/
